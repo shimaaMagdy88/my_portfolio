@@ -1,0 +1,423 @@
+/* media query */
+/* @media(max-width:1200px){
+    header nav .navbar .links button{
+        height: 48px;
+    }
+    header .links ul li{
+        padding: 0px;
+    }
+}
+@media(max-width:1050px){
+    .container{
+        width:90%;
+    }
+}
+@media (max-width:1000px){
+    .container{
+        width: 95%;
+    }
+}
+@media(max-width:930px){
+    header .links{
+        width: 100%;
+    }
+    header .links ul{
+        display: none;
+    }
+    header nav .navbar .links button{
+        float: right;
+    }
+} */
+
+
+
+/* @media(max-width:930px){
+    .col-6{
+        width: 100%;
+    }
+    main #about .left-section .btns{
+        width:45%;
+    }
+}
+@media(max-width:830px){
+    main #about .left-section .btns{
+        width:50%;
+    }
+}
+@media(max-width:730px){
+    main #about .left-section .btns{
+        width:60%;
+    }
+} */
+
+
+
+
+
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.width-size{
+    width: 87%;
+    margin: auto;
+}
+.bg-main-color{
+    background-color: #d30747 !important;
+    color: white;
+}
+.border-main-color{
+    /* border-color: rgb(238, 52, 83) !important; */
+    border-color: #d30747 !important;
+}
+.text-main-color{
+    color: #ed0a52 !important;
+}
+#circle {
+    width: 100px;
+    height: 100px;
+    background: #d30747;
+    border-radius: 50%
+}
+    
+
+/* --------------- header ---------------- */
+header{
+    background-color: rgb(58, 1, 58);
+    height: 100vh;
+}
+header nav{
+    background-color: rgb(58, 1, 58);
+    color:white;
+}
+header nav .nav-link{
+    color: white;
+}
+header nav .home{
+    color: #d30747;
+}
+header nav .nav-link:hover,
+header nav .icons i:hover{
+    color:#d30747;
+    transition: color 0.5s;
+}
+header nav .icons a,
+footer .icons a{
+    color: white !important;
+    text-decoration: none;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+header .hero{
+    color: white;
+}
+header .hero .name{
+    font-size: 65px;
+    font-weight: 600;
+}
+header .header-btns button,
+main #about .about-btns button{
+    padding: 7px 25px;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+}
+header .header-btns button:hover,
+main #about .about-btns button:hover{
+    background-color: white !important;
+    color: #d30747;
+    transition: all 0.8s;
+}
+.circle-div {
+    width: 380px; 
+    height: 380px; 
+    background-color: #d30747; 
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+}
+.profile-pic {
+    width: 380px;
+    height: 500px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-bottom-left-radius: 188px;
+    border-bottom-right-radius: 188px;
+}
+.circle{
+    position: absolute;
+    background-color: #d30747;
+    border-radius: 50%;
+}
+#circle1{
+    width: 90px;
+    height: 90px;
+    top: -20px;
+    left: 30px;
+}
+#circle2{
+    width: 40px;
+    height: 40px;
+    top: -96px;
+    left: 180px;
+}
+#circle3{
+    width: 50px;
+    height: 50px;
+    bottom: 60px;
+    right: 50px;
+}
+
+/* التحكم في ترتيب العناصر في الشاشات الأصغر */
+@media (max-width: 764px) {
+    .col-md-6 {
+        order: 2; /* النص يظهر بعد الصورة */
+        /* margin-bottom: 400px; */
+    }
+    header .hero .left-section {
+        margin-bottom: 400px;
+    }
+
+    header .hero .right-section {
+        order: 1; /* الصورة تظهر أولاً */
+    }
+
+    header .right-section .profile-pic {
+        width: 100%; /* تكبير الصورة لتناسب العرض الكامل للشاشة */
+        height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    }
+}
+
+/* تحسين النص والأزرار في الشاشات الصغيرة */
+@media (max-width: 576px) {
+    header .header-btns button {
+        font-size: 14px; /* تقليل حجم النص في الأزرار */
+        padding: 5px 15px; /* تقليل حجم الأزرار */
+    }
+
+    header .hero .name {
+        font-size: 45px; /* تقليل حجم اسم المستخدم */
+    }
+
+    header .hero h2 {
+        font-size: 20px; /* تقليل حجم العنوان */
+    }
+}
+
+
+
+/* ------------- About ------------- */
+main #about{
+    color:white;
+    background-color: rgb(58, 1, 58);
+}
+main #about .about-img{
+    position: relative;
+}
+main #about .box{
+    width: 350px;
+    height: 350px;
+    border: 8px solid #555;
+    border-radius: 5px;
+    position: absolute;
+    top:-1px;
+    right:15%;
+}
+main #about .about-btns a{
+    color: white;
+    text-decoration: none;
+}
+main #about .about-btns a:hover{
+    color: #d30747;
+    transition: all 0.8s;
+}
+main #about img{
+    width:350px;
+    border-radius: 5px;
+    position: absolute;
+    top:10%;
+    right:10%;
+}
+
+@media (max-width: 768px) {
+    main #about .width-size{
+        padding-top: 400px;
+    }
+    main #about .about-img{
+        display: none;
+    }
+}
+
+/* --------------- PORTFOLIO ------------ */
+#portfolio{
+    color:white;
+    background-color: rgb(58, 1, 58);
+    padding-bottom: 250px;
+}
+.lines{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.first-line, .second-line, .third-line{
+    width: 110px;
+    height: 1px;
+    background-color: #d30747;
+    position: absolute;
+    bottom:0px;
+}
+.second-line{
+    bottom: 5px;
+    width: 190px;
+}
+.third-line{
+    bottom: 10px;
+}
+#portfolio .categories li a{
+    color: white;
+}
+#portfolio .categories .special-color{
+    color: #d30747;
+}
+#portfolio .categories li a:hover{
+    color:#d30747;
+    transition: color 0.5s;
+}
+#portfolio .box{
+    padding: 35px;
+    color: black;
+}
+#portfolio .box .box-content{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+#portfolio .box .box-content img{
+    display: block;
+    width: 100%;
+    height: 180px;
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0.8;
+}
+#portfolio .box .box-content:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+#portfolio .box .box-content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+#portfolio .box .box-content:hover::before{
+    opacity: 1;
+}
+#portfolio .text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color: transparent;
+    /* padding: 10px; */
+    font-weight: 100;
+    display: none;
+    z-index: 3;
+}
+#portfolio .box .box-content:hover .text {
+    display: block;
+}
+#portfolio .text a {
+    text-decoration: none;
+}
+#portfolio .box .box-content:hover .text a {
+    color: rgb(26, 8, 184);
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+#portfolio .text span{
+    font-size: 20px;
+}
+#portfolio .text p{
+    padding: 5px 0px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    main #portfolio .box .box-content{
+        width: 70%;
+        margin: auto;
+    }
+}
+@media (max-width: 576px) {
+    main #portfolio .box .box-content{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* ----------- WAVE ----------- */
+svg{
+    margin-top: -280px;
+}
+@media (max-width: 920px) {
+    svg{
+        margin-top: -200px;
+    }
+}
+@media (max-width: 550px) {
+    svg{
+        margin-bottom: -50px;
+    }
+}
+@media (max-width: 330px){
+    svg{
+        display: none;
+    }
+}
+
+/* ---------- FOOTER ----------- */
+footer{
+    padding-bottom: 20px;
+    text-align: center;
+    margin-top: -50px;
+}
+footer .icons{
+    padding-bottom: 20px;
+}
+footer .icons a{
+    padding-right: 10px;
+    padding-left: 5px;
+}
+footer .icons i{
+    font-size: 25px;
+}
+footer p #name{
+    font-weight: 800;
+}
+footer .icons i:hover{
+    color: #555;
+    transition: all 0.5s;
+}
+@media (max-width: 920px) {
+    footer{
+        padding-top: 20px;
+    }
+}
+@media (max-width: 550px) {
+    footer{
+        padding-top: 40px;
+        /* margin-top: -10px; */
+    }
+}
