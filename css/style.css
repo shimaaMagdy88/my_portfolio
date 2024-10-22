@@ -1,59 +1,3 @@
-/* media query */
-/* @media(max-width:1200px){
-    header nav .navbar .links button{
-        height: 48px;
-    }
-    header .links ul li{
-        padding: 0px;
-    }
-}
-@media(max-width:1050px){
-    .container{
-        width:90%;
-    }
-}
-@media (max-width:1000px){
-    .container{
-        width: 95%;
-    }
-}
-@media(max-width:930px){
-    header .links{
-        width: 100%;
-    }
-    header .links ul{
-        display: none;
-    }
-    header nav .navbar .links button{
-        float: right;
-    }
-} */
-
-
-
-/* @media(max-width:930px){
-    .col-6{
-        width: 100%;
-    }
-    main #about .left-section .btns{
-        width:45%;
-    }
-}
-@media(max-width:830px){
-    main #about .left-section .btns{
-        width:50%;
-    }
-}
-@media(max-width:730px){
-    main #about .left-section .btns{
-        width:60%;
-    }
-} */
-
-
-
-
-
 *{
     font-family: sans-serif;
     box-sizing: border-box;
@@ -173,10 +117,9 @@ main #about .about-btns button:hover{
     right: 50px;
 }
 
-/* التحكم في ترتيب العناصر في الشاشات الأصغر */
 @media (max-width: 764px) {
     .col-md-6 {
-        order: 2; /* النص يظهر بعد الصورة */
+        order: 2; 
         /* margin-bottom: 400px; */
     }
     header .hero .left-section {
@@ -184,28 +127,27 @@ main #about .about-btns button:hover{
     }
 
     header .hero .right-section {
-        order: 1; /* الصورة تظهر أولاً */
+        order: 1;
     }
 
     header .right-section .profile-pic {
-        width: 100%; /* تكبير الصورة لتناسب العرض الكامل للشاشة */
-        height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+        width: 100%;
+        height: auto;
     }
 }
 
-/* تحسين النص والأزرار في الشاشات الصغيرة */
 @media (max-width: 576px) {
     header .header-btns button {
-        font-size: 14px; /* تقليل حجم النص في الأزرار */
-        padding: 5px 15px; /* تقليل حجم الأزرار */
+        font-size: 14px; 
+        padding: 5px 15px; 
     }
 
     header .hero .name {
-        font-size: 45px; /* تقليل حجم اسم المستخدم */
+        font-size: 45px;
     }
 
     header .hero h2 {
-        font-size: 20px; /* تقليل حجم العنوان */
+        font-size: 20px; 
     }
 }
 
@@ -330,7 +272,6 @@ main #about img{
     transform: translate(-50%, -50%);
     color: black;
     background-color: transparent;
-    /* padding: 10px; */
     font-weight: 100;
     display: none;
     z-index: 3;
@@ -418,6 +359,5 @@ footer .icons i:hover{
 @media (max-width: 550px) {
     footer{
         padding-top: 40px;
-        /* margin-top: -10px; */
     }
 }
