@@ -68,12 +68,20 @@ main #about .about-btns button{
     background-color: transparent;
     border-radius: 20px;
     color: white;
-    font-size: 18px;
+    font-size: 14px;
 }
-main #about .about-btns button a{
+header .header-btns button a{
+    text-decoration: none;
     color: white;
-    font-size: 18px;
 }
+header .header-btns button a:hover{
+    color: #ed0a52;
+    transition: all 0.8s;
+}
+/* main #about .about-btns button a{
+    color: white;
+    font-size: 16px;
+} */
 header .header-btns button:hover,
 main #about .about-btns button:hover{
     background-color: white !important;
@@ -332,6 +340,12 @@ main #about img{
         margin: auto;
     }
 }
+@media (max-width: 420px) {
+    main #portfolio .categories ul li .second-word{
+        padding: 16px;
+    }
+}
+
 
 /* ----------- WAVE ----------- */
 svg{
