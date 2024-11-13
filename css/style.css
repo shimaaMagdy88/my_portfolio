@@ -301,6 +301,7 @@ main #about img{
 #portfolio .text{
     position: absolute;
     top: 30%;
+    /* top: 50%; */
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
@@ -308,6 +309,7 @@ main #about img{
     font-weight: 100;
     display: none;
     z-index: 3;
+    text-align: center;
 }
 #portfolio .box .box-content:hover .text {
     display: block;
@@ -323,10 +325,10 @@ main #about img{
 #portfolio .text span{
     font-size: 20px;
 }
-#portfolio .text p{
-    padding: 5px 0px;
-    line-height: 1.5;
-}
+/* #portfolio .text .content-desc{
+    padding-top: 60px;
+    color: rgb(26, 8, 184);
+} */
 
 @media (max-width: 768px) {
     main #portfolio .box .box-content{
